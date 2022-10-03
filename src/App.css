@@ -38,7 +38,7 @@
   color: #fff;
 }
 #screen{
-  height: 5.5rem;
+  height: 5.2rem;
   width: 100%;
   outline: none;
   border: none;
@@ -50,6 +50,10 @@
   text-align: end;
   margin-bottom: 0.3rem;
 }
+table{
+  border-collapse: separate;
+  border-spacing: 8px 10px;
+}
 table tbody{
   margin: 0.7rem;
 }
@@ -57,7 +61,7 @@ table tbody tr{
   text-align: center;
 }
 table tbody tr td{
-  height: 75px;
+  height: 70px;
   width: 110px;
   margin: auto;
   border: 1px solid lightgray;
@@ -70,4 +74,28 @@ table tbody tr td{
 }
 .bgOrange{
   background: rgb(158, 103, 0);
+}
+/* for mbile device  */
+@media screen and (max-width:420px) {
+   .container {
+    width: 95vw;
+  }
+  .container h1{
+    font-size: 3.2rem;
+    padding: 1rem;
+    text-shadow: 2px 2px 5px orangered;
+  }
+  #screen{
+    padding-right: 0.8rem;
+    font-size: 2.3rem;
+    margin-bottom: 0.1rem;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 7px 10px;
+  }  
+  table tbody tr td{
+    height: 85px;
+
+  }
 }
